@@ -1,4 +1,4 @@
-import Form from "./form"
+import Form from "./FormTemp"
 import Work from "./Work"
 import Services from "./Services"
 import About from "./About"

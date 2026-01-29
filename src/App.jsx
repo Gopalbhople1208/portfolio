@@ -9,7 +9,7 @@ import Navbar from "./components/navbar";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import About from "./pages/About";
-import Form from "./pages/Form";
+import Form from "./pages/FormTemp";
 import Services from "./pages/Services";
 import End from "./components/end";
 import Scrolling from "./pages/Scrolling";
