@@ -13,6 +13,21 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+      let isValid = true; 
+
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if (name.trim() === "") {
+    setNameError("Name is required");
+    isValid = false;
+  }
+
+  if (!emailRegex.test(email)) {
+    setEmailError("Email is incorrect");
+    isValid = false;
+  }
+
+  if (!isValid) return;
 
     emailjs
       .send(
@@ -62,13 +77,13 @@ const Form = () => {
              className="rounded-full p-3 border hover:shadow-lg">
                <Github size ={23}/>
             </a>
-            <a className="rounded-full p-3 border hover:shadow-lg">
+            <a href ="https://twitter.com/@GopalBhople2005" className="rounded-full p-3 border hover:shadow-lg">
               <RiTwitterXLine size ={23}/>
             </a>
-            <a className="rounded-full p-3 border hover:shadow-lg">
+            <a href="https://www.instagram.com/gopal.bhople.568/" className="rounded-full p-3 border hover:shadow-lg">
               <Instagram />
             </a>
-            <a className="rounded-full p-3 border hover:shadow-lg">
+            <a href="https://www.linkedin.com/in/Gopal-Bhople " className="rounded-full p-3 border hover:shadow-lg">
               <Linkedin />
             </a>
           </div>
